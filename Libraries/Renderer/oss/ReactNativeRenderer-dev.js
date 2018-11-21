@@ -4056,10 +4056,7 @@ function createTextInstance(
   hostContext,
   internalInstanceHandle
 ) {
-  invariant(
-    hostContext.isInAParentText,
-    "Text strings must be rendered within a <Text> component."
-  );
+  
 
   var tag = allocateTag();
 
