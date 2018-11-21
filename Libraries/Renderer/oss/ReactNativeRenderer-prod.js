@@ -5204,10 +5204,7 @@ function completeUnitOfWork(workInProgress) {
                 (current = requiredContext(rootInstanceStackCursor.current)),
                 (type = requiredContext(contextStackCursor$1.current)),
                 (renderExpirationTime = current$$1),
-                invariant(
-                  type.isInAParentText,
-                  "Text strings must be rendered within a <Text> component."
-                ),
+                
                 (type = allocateTag()),
                 UIManager.createView(type, "RCTRawText", current, {
                   text: newProps
